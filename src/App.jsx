@@ -1,25 +1,33 @@
 import './App.scss';
 import { useReducer } from 'react';
 
-const initialState = { number: 0, lastAction: '', lastClicked: '', numberOfClicks: 0 };
+const initialState = {
+    number: 0,
+    lastAction: '',
+    lastClicked: '',
+    numberOfClicks: 0
+};
 
 function reducer(state, action) {
-	const obj = {}
+    let obj = {};
+    obj.lastClicked = new Date();
+    obj.numberOfClicks = state.numberOfClicks + 1;
     switch (action.direction) {
-		case 'up':
-			obj.number = state.number + 1;
-			obj.lastAction = 'increment';
-			break;
+        case 'up':
+            obj.number = state.number + 1;
+            obj.lastAction = 'increment';
+            break;
         case 'down':
-			obj.number = state.number - 1;
-			obj.lastAction = 'decrement';
+            obj.number = state.number - 1;
+            obj.lastAction = 'decrement';
+            break;
+		case 'reset':
+			obj = { ...initialState };
 			break;
         default:
             throw new Error();
     }
-	obj.lastClicked = new Date();
-	obj.numberOfClicks = state.numberOfClicks + 1;
-	return obj;
+    return obj;
 }
 
 function App() {
@@ -33,13 +41,12 @@ function App() {
                 <button onClick={() => dispatch({ direction: 'down' })}>
                     -
                 </button>
-                <button onClick={() => dispatch({ direction: 'up' })}>
-                    +
+                <button onClick={() => dispatch({ direction: 'up' })}>+</button>
+                <button onClick={() => dispatch({ direction: 'reset' })}>
+                    Reset
                 </button>
             </div>
-			<pre>
-				{JSON.stringify(state, null, 2)}
-			</pre>
+            <pre>{JSON.stringify(state, null, 2)}</pre>
         </div>
     );
 }
