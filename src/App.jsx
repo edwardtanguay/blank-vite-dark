@@ -4,13 +4,13 @@ import { useReducer } from 'react';
 const initialState = {
     number: 0,
     lastAction: '',
-    lastClicked: '',
+    whenLastClicked: '',
     numberOfClicks: 0
 };
 
 function reducer(state, action) {
     let obj = {};
-    obj.lastClicked = new Date();
+    obj.whenLastClicked = new Date();
     obj.numberOfClicks = state.numberOfClicks + 1;
     switch (action.direction) {
         case 'up':
