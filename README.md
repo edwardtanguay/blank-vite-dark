@@ -2,7 +2,7 @@
 
 This is a minimal React site created with Vite.
 
-![grafik](https://user-images.githubusercontent.com/446574/200168191-3dec6f1a-a49d-4708-82da-6c15c5c332c8.png)
+![grafik](https://starters-backend.tanguay.eu/images/starters/darkViteSimple.png)
 
 ## includes:
 
