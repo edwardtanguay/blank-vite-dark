@@ -1,24 +1,20 @@
-# blank-vite-dark
+# Dark Vite
 
-This is a minimal React site created with Vite.
+Simple one-page React site created with Vite that has Typescript and Sass installed
 
 ![grafik](https://starters-backend.tanguay.eu/images/starters/darkViteSimple.png)
 
-## includes:
+## features
 
+- built with **Vite**
+- **one-page** without any menu
+- dark layout
 - TypeScript
-- Sass
-- only one Sass file (`App.scss`) - the file `index.css` was deleted
-- page-load flicker bug fixed in index.html:
-```
-  <style>
-    body {
-      background-color: #333;
-    }
-  </style>
-```
+- one **Sass** file (`index.css` is deleted)
+- *good for simple sites and basic React howto examples*
 
-## how to install
+
+## install
 
 - download zip
 - copy all files to new directory, e.g. `/home/yourname/projects/site001`
