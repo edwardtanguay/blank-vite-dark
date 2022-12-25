@@ -25,4 +25,4 @@ Simple one-page React site created with Vite that has Typescript and Sass instal
 
 ## more starters, templates and frameworks
 
-https://starter.tanguay.eu
+https://starters.tanguay.eu
