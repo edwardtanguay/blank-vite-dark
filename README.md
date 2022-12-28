@@ -1,4 +1,4 @@
-# Dark React Site
+# Simple React Site
 
 This is a simple one-page React site created with Vite that has Typescript and Sass installed.
 
