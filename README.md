@@ -1,8 +1,8 @@
-# Dark Vite
+# Dark React Site
 
-Simple one-page React site created with Vite that has Typescript and Sass installed
+This is a simple one-page React site created with Vite that has Typescript and Sass installed.
 
-![grafik](https://starters-backend.tanguay.eu/images/starters/darkViteSimple.png)
+![grafik](https://starters.tanguay.eu/images/starters/darkViteSimple.png)
 
 ## features
 
@@ -13,7 +13,6 @@ Simple one-page React site created with Vite that has Typescript and Sass instal
 - one **Sass** file (`index.css` is deleted)
 - *good for simple sites and basic React howto examples*
 
-
 ## install
 
 - download zip
@@ -21,7 +20,6 @@ Simple one-page React site created with Vite that has Typescript and Sass instal
 - open VSCode in that directory (`code .`)
 - `npm i`
 - `npm run dev`
-
 
 ## more starters, templates and frameworks
 
